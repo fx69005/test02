@@ -50,8 +50,7 @@ var app = {
 };
 */
 
-var app = angular.module('plunker', ['snap']);
-
+var app = angular.module('plunker', ['snap' , 'ngTouch']);
 app.controller('MainCtrl', function($scope) {
   $scope.name = 'World';
 });
