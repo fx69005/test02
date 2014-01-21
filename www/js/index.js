@@ -50,7 +50,16 @@ var app = {
 };
 */
 
-var app = angular.module('plunker', ['snap' , 'ngTouch']);
+var snapper = new Snap({
+  element: document.getElementById('content')
+});
+
+var app = angular.module('adv', ['snap' , 'ngTouch']);
 app.controller('MainCtrl', function($scope) {
-  $scope.name = 'World';
+    $scope.name = 'Arthesis';
+    $scope.SnapOpts = {
+        disable: 'right',
+        hyperextensible: false
+    };
+
 });

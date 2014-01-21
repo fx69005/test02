@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html ng-app="plunker">
+<html ng-app="adv">
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -31,11 +31,11 @@
     <body ng-controller="MainCtrl">
 
         <snap-drawer>
-            <p>ADV eletronique</p>
+            <p>Menu</p>
             <button snap-close>fermer</button>
         </snap-drawer>
-        <snap-content>
-            <p>Hello {{name}}!</p>
+        <snap-content snap-options="SnapOpts">
+            <p>Aide à la visite electronique {{name}}!</p>
             <button snap-toggle="">Ouvrir</button>
         </snap-content>
 
