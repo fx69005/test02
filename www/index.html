@@ -31,12 +31,17 @@
     <body ng-controller="MainCtrl">
 
         <snap-drawer>
-            <p>Menu</p>
-            <button snap-close>fermer</button>
+            <a class="sidebar-item" href ng-click="openPdf()">item 1</a>
+            <a class="sidebar-item">item 2</a>
+            <a class="sidebar-item">item 3</a>
+            <a class="sidebar-item">item 4</a>
         </snap-drawer>
         <snap-content snap-options="SnapOpts">
+            <navigation>
+                <img src="img/picto-nav.png" id="nav" snap-toggle="">
+            </navigation>
+            <h1>page d'accueil: v6</h1>
             <p>Aide à la visite electronique {{name}}!</p>
-            <button snap-toggle="">Ouvrir</button>
         </snap-content>
 
 

@@ -1,4 +1,22 @@
+/**** SNAP CONTENT ****/
+
 snap-content {
   background-color: #fff;
-  border-left: 1px solid #ccc;
+ /* border-left: 1px solid #ccc;*/
+  -webkit-box-shadow: -3px 0px 20px 4px #656565;
+}
+
+
+/**** SIDEBAR ****/
+
+.sidebar-item{
+	float:left;
+    width:100%;
+    color:#000;
+    text-decoration:none;
+    font-weight: bold;
+    border-top:2px solid #3a3e46;
+    font-size: 15px;
+    padding:50px 0;
+    text-align: center;
 }

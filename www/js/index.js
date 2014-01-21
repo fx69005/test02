@@ -49,17 +49,19 @@ var app = {
     }
 };
 */
-
-var snapper = new Snap({
-  element: document.getElementById('content')
-});
-
 var app = angular.module('adv', ['snap' , 'ngTouch']);
 app.controller('MainCtrl', function($scope) {
     $scope.name = 'Arthesis';
+
+    /*** Paramètrage snap ***/
     $scope.SnapOpts = {
         disable: 'right',
         hyperextensible: false
+    };
+
+    /*** Fonctions ***/
+    $scope.openPdf = function(e){
+        console.log("click PDF");
     };
 
 });
