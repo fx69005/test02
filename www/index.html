@@ -31,7 +31,7 @@
     <body ng-controller="MainCtrl">
 
         <snap-drawer>
-            <a class="sidebar-item" href ng-click="openPdf()">item 1</a>
+            <a class="sidebar-item" href ng-click="cordova.exec(null, null, 'CDVPDFViewer', 'showPDF',['CordovaBot']);">item 1</a>
             <a class="sidebar-item">item 2</a>
             <a class="sidebar-item">item 3</a>
             <a class="sidebar-item">item 4</a>
@@ -50,5 +50,6 @@
         <script src="spec/lib/angular-snap.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/angular-touch.min.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"></script>
     </body>
 </html>
